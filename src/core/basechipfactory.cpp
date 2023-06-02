@@ -241,7 +241,7 @@ static const char *nor_chip  = "logic NOR";
 static const char *xor_chip  = "logic XOR";
 static const char *xnor_chip = "logic XNOR";
 static const char *not_chip  = "logic NOT";
-static const char* non_symm_or = "Nonsymm OR";
+static const char* non_symm_or = "Mystery Gate";
 
 static const char *and_chip_fi  = "logic AND (fi)";
 static const char *or_chip_fi   = "logic OR (fi)";
