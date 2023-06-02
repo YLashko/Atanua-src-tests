@@ -362,6 +362,9 @@
     <ClCompile Include="src\chip\chip74266.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\chip\nonsymmor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\include\7segchip.h">
@@ -635,6 +638,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\include\chip74266.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\nonsymmor.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

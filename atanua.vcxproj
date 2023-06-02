@@ -163,6 +163,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\chip\chip74266.cpp" />
+    <ClCompile Include="src\chip\nonsymmor.cpp" />
     <ClCompile Include="src\chip\xnorchip.cpp" />
     <ClCompile Include="src\8051\core.c" />
     <ClCompile Include="src\8051\disasm.c" />
@@ -338,6 +339,7 @@
     <ClInclude Include="src\include\nand3chip.h" />
     <ClInclude Include="src\include\nand8chip.h" />
     <ClInclude Include="src\include\nandchip.h" />
+    <ClInclude Include="src\include\nonsymmor.h" />
     <ClInclude Include="src\include\nor3chip.h" />
     <ClInclude Include="src\include\nor8chip.h" />
     <ClInclude Include="src\include\norchip.h" />

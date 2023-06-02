@@ -46,6 +46,7 @@ distribution.
 #include "nor8chip.h"
 #include "andchip.h"
 #include "orchip.h"
+#include "nonsymmor.h"
 #include "nandchip.h"
 #include "norchip.h"
 #include "xorchip.h"
@@ -240,6 +241,7 @@ static const char *nor_chip  = "logic NOR";
 static const char *xor_chip  = "logic XOR";
 static const char *xnor_chip = "logic XNOR";
 static const char *not_chip  = "logic NOT";
+static const char* non_symm_or = "Nonsymm OR";
 
 static const char *and_chip_fi  = "logic AND (fi)";
 static const char *or_chip_fi   = "logic OR (fi)";
@@ -372,6 +374,7 @@ Chip * BaseChipFactory::build(const char *aChipId)
 
     if (strcmp(and_chip,    aChipId) == 0) return new ANDChip(1);
     if (strcmp(or_chip,     aChipId) == 0) return new ORChip(1);
+    if (strcmp(non_symm_or, aChipId) == 0) return new NSORChip(1);
     if (strcmp(nand_chip,   aChipId) == 0) return new NANDChip(1);
     if (strcmp(nor_chip,    aChipId) == 0) return new NORChip(1);
     if (strcmp(xor_chip,    aChipId) == 0) return new XORChip(1);
@@ -629,6 +632,7 @@ void BaseChipFactory::getSupportedChips(vector<char *> aChipList[5])
     aChipList[0].push_back(mystrdup(xor_chip));
     aChipList[0].push_back(mystrdup(xnor_chip));
     aChipList[0].push_back(mystrdup(not_chip));
+    aChipList[0].push_back(mystrdup(non_symm_or));
 
     aChipList[0].push_back(NULL);
 
