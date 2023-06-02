@@ -631,9 +631,6 @@
     <ClInclude Include="src\include\xorchip.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Header.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="src\include\xnorchip.h">
       <Filter>Header Files</Filter>
     </ClInclude>
